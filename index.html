@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="flex">
+    <a id="download-link"><canvas id="canvas"></canvas></a>
+    <button class="capture"><i class="fas fa-camera"></i></button>
+    <div class="denied-warn">First, you need allow camera permission.</div>
+    <div class="mobile-warn">The site also works in mobile, but prefer desktop for better performance.</div>
+    <div class="checkbox-container flex">
+        <div class="filters flex">
+            <span>Filters:</span>
+            <input type="radio" name="radio" id="christmas-head">
+            <input type="radio" name="radio" id="christmas-ornament">
+            <input type="radio" name="radio" id="father-christmas">
+            <input type="checkbox" id="christmas-background">
+        </div>
+        <div class="backgrounds flex">
+            <span>Background colors:</span>
+            <input type="radio" name="backgrounds" id="blue">
+            <input type="radio" name="backgrounds" id="yellow">
+            <input type="radio" name="backgrounds" id="black">
+            <input type="radio" name="backgrounds" id="red">
+            <input type="radio" name="backgrounds" id="green">
+        </div>
+        <button id="clear"><i class="fas fa-trash"></i></button>
+    </div>
+
+    <!-- Required librarys -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clmtrackr@1.1.2/build/clmtrackr.min.js"></script>
+    <script src="https://kit.fontawesome.com/032e6d5919.js" crossorigin="anonymous"></script>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>

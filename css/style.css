@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  outline: none; }
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+body {
+  width: 100%;
+  height: 100vh;
+  gap: 50px;
+  background-color: burlywood; }
+  @media only screen and (max-width: 768px) {
+    body {
+      flex-direction: column-reverse; } }
+
+canvas {
+  border: 2px solid #000;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg); }
+
+.capture, .checkbox-container, .denied-warn, .mobile-warn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%); }
+
+.capture {
+  top: 50px;
+  padding: 10px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 200ms all;
+  -webkit-transition: 200ms all;
+  -moz-transition: 200ms all;
+  -ms-transition: 200ms all;
+  -o-transition: 200ms all;
+  z-index: 2; }
+  @media only screen and (max-width: 480px) {
+    .capture {
+      top: unset;
+      bottom: 5px; } }
+
+.checkbox-container {
+  bottom: 25px;
+  gap: 20px; }
+  @media only screen and (max-width: 480px) {
+    .checkbox-container {
+      flex-direction: column;
+      gap: 5px;
+      bottom: unset;
+      left: unset;
+      right: 1%;
+      height: 100%;
+      transform: unset;
+      -webkit-transform: unset;
+      -moz-transform: unset;
+      -ms-transform: unset;
+      -o-transform: unset; } }
+
+.filters, .backgrounds {
+  gap: 5px; }
+  @media only screen and (max-width: 480px) {
+    .filters, .backgrounds {
+      flex-direction: column; }
+      .filters span, .backgrounds span {
+        display: none; } }
+
+#clear {
+  font-size: 25px;
+  cursor: pointer; }
+  @media only screen and (max-width: 480px) {
+    #clear {
+      font-size: 20px; } }
+
+.denied-warn, .mobile-warn {
+  top: 50%;
+  text-align: center;
+  color: red;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: none;
+  max-width: 80%;
+  z-index: 2; }
