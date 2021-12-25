@@ -1,5 +1,5 @@
-# 📷 Snapchat Filters on WebCam
-Detects your face and adds filters from your webcam. You can capture and download images.
+# Snapchat Filters on WebCam
+📷 Detects your face and adds filters from your webcam. You can capture and download images.
 
 👉 [Visit site](https://snapchat-filters-on-webcam.netlify.app/)
 
